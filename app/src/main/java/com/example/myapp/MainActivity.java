@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     //객체 선언
     TextView text1;
     Button btn;
+    boolean run = false;  //상태 변수
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 text1.setText("안녕하세요");
+                /*if(run == false){
+                    text1.setText("안녕하세요");
+                    run = true;
+                }
+                if(run == true){
+                    text1.setText("Hello");
+                    run = false;
+                }*/
             }
         });
     }
