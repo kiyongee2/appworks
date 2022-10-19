@@ -14,6 +14,7 @@ import com.example.myapp3.databinding.ActivityViewBindingExBinding;
 public class ViewBindingEx extends AppCompatActivity {
     //CheckBox check;
     ActivityViewBindingExBinding binding;
+    CheckBox check;
     ImageView img1;
 
     @Override

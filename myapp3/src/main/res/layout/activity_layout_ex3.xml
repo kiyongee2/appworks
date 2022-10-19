@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2626A6"
+    android:background="#039109"
     tools:context=".layoutEx3">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#102388">
+        android:background="#22958A">
 
         <TextView
             android:id="@+id/ampm"
@@ -33,11 +33,22 @@
             android:layout_alignBaseline="@id/ampm"/>
 
         <Switch
+            android:id="@+id/onoff"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_alignBottom="@id/time"
-            android:buttonTint="#ff0"/>
+            android:layout_alignBottom="@id/time" />
+
+        <CheckBox
+            android:id="@+id/repeatCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="반복"
+            android:textColor="#fff"
+            android:layout_below="@id/ampm"
+            android:layout_alignLeft="@id/ampm"
+            android:layout_marginTop="15dp"
+            android:buttonTint="#fff" />
 
 
 
