@@ -10,6 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
         android:background="#22958A">
 
         <TextView
@@ -50,9 +51,35 @@
             android:layout_marginTop="15dp"
             android:buttonTint="#fff" />
 
+        <ImageView
+            android:id="@+id/bell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bell"
+            android:layout_below="@id/repeatCheck"
+            android:layout_alignLeft="@id/ampm"
+            android:layout_marginTop="15dp" />
 
+        <TextView
+            android:id="@+id/bellName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helium"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:layout_toRightOf="@id/bell"
+            android:layout_alignBottom="@id/bell" />
 
-
+        <CheckBox
+            android:id="@+id/vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="진동"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/bellName"
+            android:layout_marginRight="15dp"
+            android:buttonTint="#fff" />
 
     </RelativeLayout>
 
