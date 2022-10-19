@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ViewBindingEx">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="네이버 https://www.naver.com      전화번호 02-1234-5678"
+        android:autoLink="web|phone" />
+
+    <!-- 입력 뷰는 inputType 속성 사용
+         text : 한줄 입력
+         textPassword : 비밀번호
+         textMultilne : 여러 줄 입력
+         phone : 전화 번호 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine"
+        android:hint="입력해 주세요"/>
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="해제"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp" />
+
+    <!-- 긴 텍스트는 values/strings.xml에 등록-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/long_text"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:maxLines="3"/>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/doit" />
+</LinearLayout>
