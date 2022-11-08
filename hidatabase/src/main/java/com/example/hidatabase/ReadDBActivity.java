@@ -22,7 +22,8 @@ public class ReadDBActivity extends AppCompatActivity {
         SQLiteDatabase db = helper.getWritableDatabase();
 
         //SELECT - rawQuery() 함수 사용
-        Cursor cursor = db.rawQuery("select title, content from tb_memo order by id desc",
+        Cursor cursor =
+                db.rawQuery("select title, content from tb_memo order by id desc",
                         null);
         while(cursor.moveToNext()){ //데이터가 있는 동안
             binding.readTitle.setText(cursor.getString(0));
